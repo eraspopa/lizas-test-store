@@ -686,16 +686,20 @@ label, label + * {
 .eu-cookie-bar-notification a:hover {
 	text-decoration: underline;
 }
-
+.master-wrapper-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.header-links-wrapper {
+    display: flex;
+}
 
 /*********** HEADER ***********/
-
-
-
 .admin-header-links {
-	background-color: #333;
-	text-align: center;
-	color: #eee;
+    background-color: #333;
+    text-align: center;
+    color: #eee;
 }
 .admin-header-links * {
 	display: inline-block;
@@ -741,6 +745,21 @@ label, label + * {
 .header-selectors-wrapper select {
 	width: 100%;
 }
+
+.header {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f7f5f5;
+    align-items: center;
+    box-shadow: 0 3px 5px 0 #e0e0e0;
+    padding-top: 10px;
+}
 .language-list {
 	max-width: 100%;
 	font-size: 0;
@@ -765,7 +784,19 @@ label, label + * {
 	left: 0;
 	margin: auto;
 }
-
+.parallax {
+    background-image: url("/images/img_parallax.png");
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 95px;
+    text-align: center;
+}
 .header-links-wrapper {
 	position: relative;
 	padding: 20px 0;
@@ -782,7 +813,7 @@ label, label + * {
 .header-links span,
 .header-links a {
 	display: inline-block;
-	font-size: 12px; /*reset zeroing*/
+	font-size: 20px; /*reset zeroing*/
 	line-height: 36px;
 	text-transform: uppercase;
 }
@@ -798,8 +829,8 @@ label, label + * {
 	padding: 0 20px;
 }
 #topcartlink a {
-	background: url('../images/shopping-bag.png') right center no-repeat;
-	padding: 0 20px 0 0;
+	/*background: url('../images/shopping-bag.png') right center no-repeat;*/
+	/*padding: 0 20px 0 0;*/
 }
 
 .header-lower {
@@ -818,7 +849,7 @@ label, label + * {
 	line-height: 0; /*firefox line-height bug fix*/
 }
 .header-logo a img {
-	max-width: 100%;
+	max-width: 70px;
 	opacity: 1;
 }
 
@@ -6181,8 +6212,8 @@ pre {
 
 
 .header {
-	width: 980px;
-	margin: auto;
+	width: 100%;
+	
 }
 .header-upper:after {
 	content: "";
@@ -6890,7 +6921,7 @@ pre {
 
 
 .header {
-	width: 1200px;
+	width: 100%;
 }
 
 

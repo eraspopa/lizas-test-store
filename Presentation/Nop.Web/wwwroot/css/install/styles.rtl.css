@@ -179,3 +179,9 @@ hr {
             padding: 250px;
             color: #FFF;
         }
+
+
+
+.admin-header-links {
+    display: none;
+}

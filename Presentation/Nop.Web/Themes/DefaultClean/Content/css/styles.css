@@ -717,7 +717,7 @@ label, label + * {
 }
 
 .header {
-    position: relative;
+    position: fixed;
     z-index: 10;
     margin: 0;
     text-align: center;
@@ -813,8 +813,9 @@ label, label + * {
 .header-links a:hover {
     color: #eaeaea;
 }
+
+
 #topcartlink {
-	
 }
 #topcartlink a {
 	
